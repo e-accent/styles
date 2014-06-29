@@ -1,0 +1,96 @@
+// To include your own, local copies of fonts, use the following template
+//
+//@font-face {
+//  font-family: '#{$some-font-variable}';
+//  font-style: normal;
+//  font-weight: 400;
+//  src: url(../fonts/icons/#{$some-font-variable}.eot);
+//  src: url('../fonts/icons/#{$some-font-variable}.eot?#iefix') format('ie9-skip-eot'),
+//       url('../fonts/icons/#{$some-font-variable}.woff') format('woff'),
+//       url('../fonts/icons/#{$some-font-variable}.ttf')  format('truetype');
+//}
+
+
+
+/* FONTS & TEXT */
+$serif: 'Mercury SSm A', 'Mercury SSm B';
+$sans:  'Gotham SSm A',  'Gotham SSm B';
+
+$base-font-size: 12pt;
+$baseline: 1.5rem;
+
+
+// Modular scale
+
+$fs-x-small:    .7071067812rem;
+$fs-small:      .8408964153rem;
+$fs-normal:    1.0000000000rem;
+$fs-large:     1.1892071150rem;
+$fs-x-large:   1.4142135624rem;
+$fs-xx-large:  1.6817928305rem;
+$fs-xxx-large: 2.0000000000rem;
+
+
+// Available font weights
+
+$sans-x-light: 200;
+$sans-light:   300;
+$sans-book:    400;
+
+$serif-light:  300;
+$serif-bold:   500;
+
+
+
+// TYPOGRAPHY
+
+
+// http://webtypography.net/2.1.2
+//
+// “Anything from 45 to 75 characters is widely regarded
+// as a satisfactory length of line for a single-column
+// page set in a serifed text face in a text size.
+//
+$measure: 38rem; // 75 characters
+
+
+// http://webtypography.net/2.1.6 //
+//
+// “Acronyms such as CIA and PLO are
+// frequent in some texts. So are abbreviations such as CE and BCE or AD
+// and BC. The normal value for letterspacing these sequences of small or
+// full caps is 5% to 10% of the type size. Many typographers like to
+// letterspace all strings of numbers as well. Spacing is essential for
+// rapid reading of long, fundamentally meaningless strings such as
+// serial numbers, and is helpful even for shorter strings such as phone
+// numbers and dates.”
+abbr { letter-spacing: 0.1em; }
+
+
+
+
+ul, ol, dl, p, table {
+  margin-top: 0;
+  margin-bottom: $baseline;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p {
+          hyphens: auto;
+       -o-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+          hyphenate-limit-lines: 3;
+       -o-hyphenate-limit-lines: 3;
+     -moz-hyphenate-limit-lines: 3;
+      -ms-hyphenate-limit-lines: 3;
+  -webkit-hyphenate-limit-lines: 3;
+  max-width: $measure;
+}
+
+strong { white-space: nowrap; }
+
+
