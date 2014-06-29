@@ -1,0 +1,49 @@
+@import 'all.scss';
+
+
+// Color scheme
+
+$black:      #000;
+$lightgrey:  #f0f0f0;
+$grey:       #ccc;
+$darkgrey:   #333;
+$gold:       #94865c;
+$lightblue:  #f5fcff;
+$green:      #2ac380;
+$lightgreen: #d9e9c9;
+$white:      #fff;
+
+
+// SETTINGS
+$max-body-width: 71em;
+
+
+
+
+// HEADINGS
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
+  margin: 0;
+}
+
+
+
+
+// HTML, BODY
+
+html {
+  background-color: $lightgrey;
+  height: 100%;
+}
+
+body {
+  background-color: $white;
+  color: $darkgrey;
+  font-size: $base-font-size;
+  min-height: 100%;
+  line-height: $baseline;
+  margin: 0 auto;
+  max-width: $max-body-width;
+  text-rendering: optimizeLegibility;
+}

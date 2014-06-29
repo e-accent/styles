@@ -1,0 +1,58 @@
+
+// BASE CLASSES, MIXINS
+
+@mixin flexbox {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+@mixin align-items($arg) {
+  align-items: $arg;
+  -ms-align-items: $arg;
+  -webkit-align-items: $arg;
+}
+
+@mixin align-content($arg) {
+  align-content: $arg;
+  -ms-align-content: $arg;
+  -webkit-align-content: $arg;
+}
+
+@mixin flex-direction($arg) {
+  flex-direction: $arg;
+  -ms-flex-direction: $arg;
+  -webkit-flex-direction: $arg;
+}
+
+@mixin justify-content($arg) {
+  justify-content: $arg;
+  -ms-justify-content: $arg;
+  -webkit-justify-content: $arg;
+}
+
+@mixin flex-wrap($arg) {
+  flex-wrap: $arg;
+  -ms-flex-wrap: $arg;
+  -webkit-flex-wrap: $arg;
+}
+
+@mixin flex-grow($x) {
+  flex-grow: $x;
+  -ms-flex-grow: $x;
+  -webkit-flex-grow: $x;
+}
+
+@mixin align-self($x) {
+  align-self: $x;
+  -ms-align-self: $x;
+  -webkit-align-self: $x;
+}
+
+@mixin order($x) {
+  order: $x;
+  -moz-order: $x;
+  -ms-order: $x;
+  -o-order: $x;
+  -webkit-order: $x;
+}

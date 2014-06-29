@@ -1,7 +1,19 @@
 @charset "UTF-8";
 
 @import 'normalize';
-// @import 'pygments.scss';
+@import 'typography';
+@import 'flexboxes';
+@import 'forms';
 
-@import 'settings';
+
+
+// LANGUAGE SELECTION
+
+// Push back language images/links that are not current or hovered
+// FIXME this could be less complicated
+@each $language in $available_languages {
+  [lang='#{$language}'] .languages a:not(:hover):not([hreflang^='#{$language}']) {
+    opacity: .4;
+  }
+}
 
