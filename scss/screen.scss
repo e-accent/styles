@@ -47,3 +47,10 @@ body {
   max-width: $max-body-width;
   text-rendering: optimizeLegibility;
 }
+
+
+// Don't display empty DIVs
+
+div:empty { display: none; }
+
+

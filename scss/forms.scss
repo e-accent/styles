@@ -1,0 +1,18 @@
+form {
+	fieldset {}
+	legend {}
+	.field {
+		padding-right: 3rem;
+		&:last-child { padding-right: 0; }
+	}
+	input[type="text"], input[type="email"] {
+		border: 1px solid $lightgrey;
+		border-radius: .5em;
+		box-sizing: border-box;
+		display: block;
+		margin-top: .25 * $baseline;
+		margin-bottom: .25 * $baseline;
+		padding: .25 * $baseline;
+		width: 100%;
+	}
+}
