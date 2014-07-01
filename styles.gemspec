@@ -13,9 +13,6 @@ Gem::Specification.new do |s|
   s.summary     = "Default SCSS framework"
   s.description = ""
 
-  s.files = Dir["{app,lib}/**/*"] + ["README.md"]
-
   s.add_dependency "sass-rails"
-
   s.files      = `git ls-files`.split("\n")
 end
