@@ -4,7 +4,7 @@
 
 * Ruby >= 2.0
 * Rails >= 4.0
-* sass >= 3.2
+* sass-rails ~> 4.0.3
 
 ## Installation in different environments
 
