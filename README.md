@@ -35,17 +35,14 @@ Run `bundle`
 
 ## How use it
 
-Add the follow line to the head section of your layouts:
-```ruby
-yield :head
-```
+Import be used style file, then using in a section:
+```scss
+@import "styles/flexbox";
 
-Using in a view template:
-```ruby
-content_for :head do
-  stylesheet_link_tag 'styles/print'
-  stylesheet_link_tag 'styles/screen'
-end
+section {
+  @include flexbox;
+  color: $black;
+}
 ```
 
 
