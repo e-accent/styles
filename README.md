@@ -4,7 +4,7 @@
 
 * Ruby >= 2.0
 * Rails >= 4.0
-* sass >= 3.2
+* sass-rails ~> 4.0.3
 
 ## Installation in different environments
 
@@ -17,39 +17,32 @@ $ git fetch origin
 $ git checkout origin/master -b <work branch>
 ```
 
-Add to the development group in Gemfile of your project:
+Add to Gemfile of your project:
 ```ruby
-group :development do
-  gem 'styles', path: "<the location of local>/styles"
-end
+gem 'styles', path: "<the location of local>"
 ```
 
 Run `bundle`
 
 ###b. Production environment
 
-Add to the production group in Gemfile of your project:
+Add to Gemfile of your project:
 ```ruby
-group :production do
-  gem 'styles', git: 'https://github.com/e-accent/styles.git', branch: 'master'
-end
+gem 'styles', git: 'https://github.com/e-accent/styles.git'
 ```
 
 Run `bundle`
 
 ## How use it
 
-Add the follow line to the head section of your layouts:
-```ruby
-yield :head
-```
+Import be used style file, then using in a section:
+```scss
+@import "styles/flexbox";
 
-Using in a view template:
-```ruby
-content_for :head do
-  stylesheet_link_tag 'styles/print'
-  stylesheet_link_tag 'styles/screen'
-end
+section {
+  @include flexbox;
+  color: $black;
+}
 ```
 
 
