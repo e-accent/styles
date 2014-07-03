@@ -17,22 +17,18 @@ $ git fetch origin
 $ git checkout origin/master -b <work branch>
 ```
 
-Add to the development group in Gemfile of your project:
+Add to Gemfile of your project:
 ```ruby
-group :development do
-  gem 'styles', path: "<the location of local>/styles"
-end
+gem 'styles', path: "<the location of local>"
 ```
 
 Run `bundle`
 
 ###b. Production environment
 
-Add to the production group in Gemfile of your project:
+Add to Gemfile of your project:
 ```ruby
-group :production do
-  gem 'styles', git: 'https://github.com/e-accent/styles.git', branch: 'master'
-end
+gem 'styles', git: 'https://github.com/e-accent/styles.git'
 ```
 
 Run `bundle`
