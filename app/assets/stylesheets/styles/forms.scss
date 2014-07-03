@@ -1,0 +1,32 @@
+form {
+  fieldset {
+    background-color: $lightgrey;
+    margin-bottom: .5 * $baseline;
+    margin-top: .5 * $baseline;
+  }
+  legend {}
+  .field {
+    margin-bottom: .5 * $baseline;
+    margin-top: .5 * $baseline;
+    // padding-right: 3rem;
+    // &:last-child { padding-right: 0; }
+  }
+  input[type="text"], input[type="email"], input[type="password"] {
+    border: 1px solid $lightgrey;
+    border-radius: .25rem;
+    box-sizing: border-box;
+    display: block;
+    margin-top: .25 * $baseline;
+    margin-bottom: .25 * $baseline;
+    padding: .25 * $baseline;
+    width: 100%;
+  }
+  input[type="submit"] {
+    // border-radius: .25rem;
+  }
+  &.stacked {
+    .field > * {
+      display: block;
+    }
+  }
+}
