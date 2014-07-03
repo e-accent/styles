@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["e-accent"]
   s.email       = ["info@e-accent.com"]
   s.homepage    = "http://e-accent.com"
-  s.summary     = "Default SCSS framework"
-  s.description = ""
+  s.summary     = "Base SCSS for E-accent's projects"
+  s.description = "A Rails engine with base SCSS modules for use and extension in our projects."
 
   s.add_dependency "sass-rails"
   s.files      = `git ls-files`.split("\n")
