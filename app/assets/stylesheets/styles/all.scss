@@ -9,4 +9,6 @@
 @import 'notices';
 
 
+* { box-sizing: border-box; }
+
 div:empty, section:empty { display: none; }
