@@ -12,3 +12,16 @@
 * { box-sizing: border-box; }
 
 div:empty, section:empty { display: none; }
+
+a.cancel {
+	color: red;
+	&:before { content: '← '; }
+}
+
+.note {
+	font-size: $fs-small;
+}
+
+.row {
+	margin: $baseline 0;
+}
