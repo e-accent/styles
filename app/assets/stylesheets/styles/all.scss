@@ -6,6 +6,7 @@
 @import 'flexbox';
 @import 'grid';
 @import 'forms';
+@import 'tables';
 @import 'notices';
 
 
@@ -13,9 +14,14 @@
 
 div:empty, section:empty { display: none; }
 
-a.cancel {
-	color: red;
-	&:before { content: '← '; }
+a {
+	&.cancel {
+		color: red;
+		&:before { content: '← '; }
+	}
+	&.destroy {
+		color: red;
+	}
 }
 
 .note {

@@ -8,6 +8,7 @@ form {
   .field {
     margin-bottom: .5 * $baseline;
     margin-top: .5 * $baseline;
+    max-width: $measure;
     // padding-right: 3rem;
     // &:last-child { padding-right: 0; }
   }
@@ -23,6 +24,9 @@ form {
     margin-bottom: .25 * $baseline;
     padding: .25 * $baseline;
     width: 100%;
+  }
+  div.submit {
+    text-align: right;
   }
   input[type="submit"] {
     &[type="submit"] { 
