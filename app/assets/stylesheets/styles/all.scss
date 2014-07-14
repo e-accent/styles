@@ -28,6 +28,8 @@ a {
 	font-size: $fs-small;
 }
 
-.row {
-	margin: $baseline 0;
+
+.full-width {
+	box-sizing: border-box;
+	width: 100%;
 }

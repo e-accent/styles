@@ -1,8 +1,18 @@
 table {
 	border-collapse: collapse;
+	caption {
+		font-size: $fs-large;
+		font-weight: $fw-bold;
+		padding: .5rem .75rem;
+		text-align: left;
+	}
 	th, td {
 		border-bottom: 1px solid $grey;
 		border-top: 1px solid $grey;
-		padding: .5em .75em;
+		padding: .5rem .75rem;
+		text-align: left;
+	}
+	th {
+		font-weight: $fw-book;
 	}
 }
