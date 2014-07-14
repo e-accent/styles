@@ -6,16 +6,12 @@ form {
     margin-top: .5 * $baseline;
   }
   legend {}
-  .row {
-    @include flexbox;
-    margin: $baseline 0;
-  }
   .field {
-    margin-right: $baseline;
-    width: 20em;
-  }
-  .wide {
-    width: 42em !important;
+    margin-bottom: .5 * $baseline;
+    margin-top: .5 * $baseline;
+    max-width: $measure;
+    // padding-right: 3rem;
+    // &:last-child { padding-right: 0; }
   }
   label { 
     display: block;
@@ -34,11 +30,13 @@ form {
     text-align: right;
   }
   input[type="submit"] {
-    background-color: $lightgrey;
-    border: 1px solid $grey;
-    border-radius: .25rem;
-    margin: .75rem 0;
-    padding: .25rem .5rem;
-    -webkit-appearance: none; 
+    &[type="submit"] { 
+      background-color: $lightgrey;
+      border: 1px solid $grey;
+      border-radius: .25rem;
+      margin: .75rem 0;
+      padding: .25rem .5rem;
+      -webkit-appearance: none; 
+    }
   }
 }
