@@ -1,0 +1,4 @@
+@mixin transform($effect, $arg) {
+  -webkit-transform: $effect($arg);
+  transform: $effect($arg);
+}
