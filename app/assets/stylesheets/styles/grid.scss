@@ -1,0 +1,5 @@
+@mixin column-count($arg) {
+     -moz-column-count: $arg;
+  -webkit-column-count: $arg;
+          column-count: $arg;
+}

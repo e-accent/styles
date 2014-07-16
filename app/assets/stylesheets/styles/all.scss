@@ -19,6 +19,10 @@ a {
 		color: red;
 		&:before { content: '← '; }
 	}
+	&.back {
+		color: red;
+		&:before { content: '← '; }
+	}
 	&.destroy {
 		color: red;
 	}
