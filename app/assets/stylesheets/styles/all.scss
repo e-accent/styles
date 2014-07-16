@@ -8,9 +8,14 @@
 @import 'forms';
 @import 'tables';
 @import 'notices';
+@import 'transforms';
 
+@mixin transform($effect, $arg) {
+  -webkit-transform: $effect($arg);
+  transform: $effect($arg);
+}
 
-* { box-sizing: border-box; }
+// * { box-sizing: border-box; }
 
 div:empty, section:empty { display: none; }
 
