@@ -4,13 +4,9 @@
 // Color scheme
 
 $black:      #000;
-$lightgrey:  #f0f0f0;
+$light-grey: #f0f0f0;
 $grey:       #ccc;
-$darkgrey:   #333;
-$gold:       #94865c;
-$lightblue:  #f5fcff;
-$green:      #2ac380;
-$lightgreen: #d9e9c9;
+$dark-grey:  #333;
 $white:      #fff;
 
 
@@ -33,13 +29,13 @@ h1, h2, h3, h4, h5, h6 {
 // HTML, BODY
 
 html {
-  background-color: $lightgrey;
+  background-color: $light-grey;
   height: 100%;
 }
 
 body {
   background-color: $white;
-  color: $darkgrey;
+  color: $dark-grey;
   font-size: $base-font-size;
   min-height: 100%;
   line-height: $baseline;

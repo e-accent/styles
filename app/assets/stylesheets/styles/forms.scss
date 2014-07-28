@@ -1,6 +1,6 @@
 form {
   fieldset {
-    background-color: $lightgrey;
+    // background-color: $light-grey;
     border-radius: .5rem;
     margin-bottom: .5 * $baseline;
     margin-top: .5 * $baseline;
@@ -10,14 +10,9 @@ form {
     margin-bottom: .5 * $baseline;
     margin-top: .5 * $baseline;
     max-width: $measure;
-    // padding-right: 3rem;
-    // &:last-child { padding-right: 0; }
-  }
-  label { 
-    display: block;
   }
   input[type="text"], input[type="email"], input[type="password"], textarea {
-    border: 1px solid $lightgrey;
+    border: 1px solid $light-grey;
     border-radius: .25rem;
     box-sizing: border-box;
     display: block;
@@ -31,7 +26,7 @@ form {
   }
   input[type="submit"] {
     &[type="submit"] { 
-      background-color: $lightgrey;
+      background-color: $light-grey;
       border: 1px solid $grey;
       border-radius: .25rem;
       margin: .75rem 0;
