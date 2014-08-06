@@ -35,22 +35,22 @@
   -webkit-flex-wrap: $arg;
 }
 
-@mixin flex-grow($x) {
-  flex-grow: $x;
-  -ms-flex-grow: $x;
-  -webkit-flex-grow: $x;
+@mixin flex-grow($arg) {
+  flex-grow: $arg;
+  -ms-flex-grow: $arg;
+  -webkit-flex-grow: $arg;
 }
 
-@mixin align-self($x) {
-  align-self: $x;
-  -ms-align-self: $x;
-  -webkit-align-self: $x;
+@mixin align-self($arg) {
+  align-self: $arg;
+  -ms-align-self: $arg;
+  -webkit-align-self: $arg;
 }
 
-@mixin order($x) {
-  order: $x;
-  -moz-order: $x;
-  -ms-order: $x;
-  -o-order: $x;
-  -webkit-order: $x;
+@mixin order($arg) {
+  order: $arg;
+  -moz-order: $arg;
+  -ms-order: $arg;
+  -o-order: $arg;
+  -webkit-order: $arg;
 }

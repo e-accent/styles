@@ -4,6 +4,7 @@ form {
     border-radius: .5rem;
     margin-bottom: .5 * $baseline;
     margin-top: .5 * $baseline;
+    max-width: $measure;
   }
   legend {}
   .field {
@@ -18,8 +19,15 @@ form {
     display: block;
     margin-top: .25 * $baseline;
     margin-bottom: .25 * $baseline;
+    max-width: $measure;
     padding: .25 * $baseline;
     width: 100%;
+  }
+  @for $i from 1 through 40 {
+    input[size='#{$i}'] { 
+      display: inline-block;
+      width: $i * .75em; 
+    }
   }
   div.submit {
     text-align: right;
@@ -35,3 +43,4 @@ form {
     }
   }
 }
+
