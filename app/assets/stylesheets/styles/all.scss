@@ -15,30 +15,37 @@
 div:empty, section:empty { display: none; }
 
 section + section {
-	margin-top: $baseline;
+  margin-top: $baseline;
 }
 
 a {
-	&.cancel {
-		color: red;
-		&:before { content: '← '; }
-	}
-	&.back {
-		color: red;
-		&:before { content: '← '; }
-	}
-	&.destroy {
-		color: red;
-	}
+  &.cancel {
+    color: red;
+    &:before { content: '← '; }
+  }
+  &.back {
+    color: red;
+    &:before { content: '← '; }
+  }
+  &.destroy {
+    color: red;
+  }
 }
 
 .note {
-	font-size: $fs-small;
+  font-size: $fs-small;
 }
 
 
 .full-width {
-	box-sizing: border-box;
-	width: 100%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
+
+.field_with_errors {
+  display: inline;
+  input[type], textarea, select {
+    border: 1px solid red;
+  }
+}
