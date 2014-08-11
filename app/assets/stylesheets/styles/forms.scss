@@ -8,20 +8,47 @@ form {
   }
   legend {}
   .field {
-    margin-bottom: .5 * $baseline;
-    margin-top: .5 * $baseline;
+    // margin-bottom: .5 * $baseline;
+    // margin-top: .5 * $baseline;
     max-width: $measure;
+    &.conjoined {
+      @include flexbox;
+      input, button {
+        border-radius: 0;
+        border-right: none;
+        &:first-child {
+          border-top-left-radius: .5rem;
+          border-bottom-left-radius: .5rem;
+        }
+        &:last-child {
+          border-right: 1px solid $hairline-grey;
+          border-top-right-radius: .5rem;
+          border-bottom-right-radius: .5rem;
+        }
+      }
+    }
   }
   input[type="text"], input[type="email"], input[type="password"], textarea {
-    border: 1px solid $light-grey;
-    border-radius: .25rem;
-    box-sizing: border-box;
+    border: 1px solid $hairline-grey;
+    border-radius: .5rem;
+    box-shadow: inset 1px 2px 1px 0 lighten($light-grey, 5);
+    box-sizing: content-box; // otherwise can't calculate the 'size' value correctly
     display: block;
     margin-top: .25 * $baseline;
     margin-bottom: .25 * $baseline;
     max-width: $measure;
     padding: .25 * $baseline;
     width: 100%;
+  }
+  button {
+    background-color: $light-grey;
+    border: 1px solid $hairline-grey;
+    border-radius: .5rem;
+    background: linear-gradient($light-grey, $white); /* Standard syntax */
+    box-sizing: content-box; // otherwise can't calculate the 'size' value correctly
+    margin-top: .25 * $baseline;
+    margin-bottom: .25 * $baseline;
+    padding: .25 * $baseline;
   }
   @for $i from 1 through 40 {
     input[size='#{$i}'] { 
