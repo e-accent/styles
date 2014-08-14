@@ -13,8 +13,6 @@ fieldset {
   }
 }
 .field {
-  // margin-bottom: .5 * $baseline;
-  // margin-top: .5 * $baseline;
   max-width: $measure;
   &.conjoined {
     @include flexbox;
@@ -36,26 +34,29 @@ fieldset {
     }
   }
 }
-input[type="text"], input[type="email"], input[type="password"], input[type="url"], input[type="tel"], textarea {
+input[type="text"], input[type="email"], input[type="password"], input[type="url"], input[type="tel"], input[type="search"], input[type="number"], textarea {
   border: 1px solid $hairline-grey;
-  border-radius: .5rem;
+  border-radius: .25rem;
   box-shadow: inset 1px 2px 1px 0 lighten($light-grey, 5);
   display: block;
   margin-top: .25 * $baseline;
   margin-bottom: .25 * $baseline;
   max-width: $measure;
-  padding: .25 * $baseline .5 * $baseline;
+  padding: .5rem .75rem;
   width: 100%;
+}
+input[type="number"] {
+  text-align: right;
 }
 button, input[type="file"] {
   background-color: $light-grey;
   border: 1px solid $hairline-grey;
-  border-radius: .5rem;
+  border-radius: .25rem;
   background: linear-gradient($light-grey, $white);
   font-weight: $fw-book;
   margin-top: .25 * $baseline;
   margin-bottom: .25 * $baseline;
-  padding: .25 * $baseline .75em;
+  padding: .3333rem .75rem;
 }
 .select-wrapper {
   background-color: $light-grey;
@@ -80,7 +81,7 @@ button, input[type="file"] {
     &:focus { outline: 0; }
   }
 }
-input[type="submit"], button, .picker {
+input[type="submit"], button, .select-wrapper {
   &:hover {
     background: linear-gradient(darken($light-grey, 5), darken($white, 2));
   }
@@ -103,10 +104,10 @@ input[type="submit"] {
   border: 1px solid $grey;
   border-radius: .25rem;
   margin: .75rem 0;
-  padding: .25 * $baseline .5rem;
+  padding: .3333rem .75rem;
   -webkit-appearance: none; 
 }
-input[disabled], button[disabled] {
+input[disabled], button[disabled], .select-wrapper.disabled {
   opacity: .5;
 }
 
