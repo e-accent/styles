@@ -32,6 +32,28 @@ a {
   }
 }
 
+.button {
+  background-color: $light-grey;
+  border-radius: .5em;
+  padding: .25em .75em;
+  text-decoration: none;
+}
+a.button {
+  background-color: $link-color;
+  color: white;
+}
+.pagination {
+  margin: 2 * $baseline 0;
+  text-align: center;
+  & > * {
+    @extend .button;
+  }
+  & > a {
+    @extend a.button;
+  }
+}
+
+
 .note {
   font-size: $fs-small;
 }
