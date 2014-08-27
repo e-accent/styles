@@ -49,6 +49,8 @@ a.button {
     @extend .button;
   }
   & > a {
+    background-color: $pagination-link-background-color;
+    color: $pagination-link-color;
     @extend a.button;
   }
 }
