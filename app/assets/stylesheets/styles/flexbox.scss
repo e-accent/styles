@@ -41,6 +41,12 @@
   -webkit-flex-grow: $arg;
 }
 
+@mixin flex-shrink($arg) {
+  flex-shrink: $arg;
+  -ms-flex-shrink: $arg;
+  -webkit-flex-shrink: $arg;
+}
+
 @mixin align-self($arg) {
   align-self: $arg;
   -ms-align-self: $arg;

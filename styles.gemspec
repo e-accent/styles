@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Styles::VERSION
   s.authors     = ["e-accent"]
   s.email       = ["info@e-accent.com"]
-  s.homepage    = "http://e-accent.com"
+  s.homepage    = "https://www.e-accent.com"
   s.summary     = "Base SCSS for E-accent's projects"
   s.description = "A Rails engine with base SCSS modules for use and extension in our projects."
 
