@@ -16,8 +16,6 @@ fieldset {
   max-width: $measure;
   &.checkbox, &.radio {
     @include flexbox;
-    margin-left: 2.5em;
-    text-indent: -2.5em;
     input[type="checkbox"] {
       margin-right: .25em;
     }
