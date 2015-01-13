@@ -31,7 +31,7 @@ $fs-xx-large:  1.6817928305em;
 $fs-xxx-large: 2.0000000000em;
 
 
-// 
+//
 
 body {
   line-height: $baseline;
@@ -89,7 +89,3 @@ p, li {
   -webkit-hyphenate-limit-lines: 3;
   max-width: $measure;
 }
-
-strong { white-space: nowrap; }
-
-
