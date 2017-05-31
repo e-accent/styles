@@ -1,16 +1,12 @@
 // Languages
 $available_languages: ('en');
 
-
 // Fonts, size and line-height
 $serif: serif;
 $sans:  sans-serif;
-
 $baseline: 1.5rem;
 
-
 // Font weights
-
 $fw-x-light: 200;
 $fw-light:   300;
 $fw-book:    400;
@@ -19,9 +15,7 @@ $fw-normal:  $fw-medium;
 $fw-bold:    700;
 $fw-black:   900;
 
-
 // Modular scale
-
 $fs-x-small:    .7071067812em;
 $fs-small:      .8408964153em;
 $fs-normal:    1.0000000000em;
@@ -30,31 +24,21 @@ $fs-x-large:   1.4142135624em;
 $fs-xx-large:  1.6817928305em;
 $fs-xxx-large: 2.0000000000em;
 
-
-//
-
 body {
   line-height: $baseline;
   text-rendering: optimizeLegibility;
 }
 
-
-
-
 // TYPOGRAPHY
 
-
 // http://webtypography.net/2.1.2
-//
 // “Anything from 45 to 75 characters is widely regarded
 // as a satisfactory length of line for a single-column
 // page set in a serifed text face in a text size.
 //
 $measure: 38em; // 75 characters
 
-
 // http://webtypography.net/2.1.6 //
-//
 // “Acronyms such as CIA and PLO are
 // frequent in some texts. So are abbreviations such as CE and BCE or AD
 // and BC. The normal value for letterspacing these sequences of small or
@@ -64,9 +48,6 @@ $measure: 38em; // 75 characters
 // serial numbers, and is helpful even for shorter strings such as phone
 // numbers and dates.”
 abbr { letter-spacing: 0.1em; }
-
-
-
 
 ul, ol, dl, p, table {
   margin-top: 0;
