@@ -1,127 +1,131 @@
 // SANS SERIF
 
+// Instead of defining separate font-family values for each font, 
+// you can use same font-family name for each font, and define the matching styles: 
+// https://www.metaltoad.com/blog/how-use-font-face-avoid-faux-italic-and-bold-browser-styles
+
 @font-face {
-  font-family: 'core_sans_a_25_extralightRg';
+  font-family: 'Core Sans';
   src: font-url('coresansa_25extralight_macroman/CoreSansA25-webfont.eot');
   src: font-url('coresansa_25extralight_macroman/CoreSansA25-webfont.eot?#iefix') format('embedded-opentype'),
        font-url('coresansa_25extralight_macroman/CoreSansA25-webfont.woff2') format('woff2'),
        font-url('coresansa_25extralight_macroman/CoreSansA25-webfont.woff') format('woff'),
        font-url('coresansa_25extralight_macroman/CoreSansA25-webfont.ttf') format('truetype'),
        font-url('coresansa_25extralight_macroman/CoreSansA25-webfont.svg#core_sans_a_25_extralightRg') format('svg');
-  font-weight: normal;
+  font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'core_sans_a_35_lightregular';
+  font-family: 'Core Sans';
   src: font-url('coresansa_35light_macroman/CoreSansA35-webfont.eot');
   src: font-url('coresansa_35light_macroman/CoreSansA35-webfont.eot?#iefix') format('embedded-opentype'),
        font-url('coresansa_35light_macroman/CoreSansA35-webfont.woff2') format('woff2'),
        font-url('coresansa_35light_macroman/CoreSansA35-webfont.woff') format('woff'),
        font-url('coresansa_35light_macroman/CoreSansA35-webfont.ttf') format('truetype'),
        font-url('coresansa_35light_macroman/CoreSansA35-webfont.svg#core_sans_a_35_lightregular') format('svg');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'core_sans_a_45_regularregular';
+  font-family: 'Core Sans';
   src: font-url('coresansa_45regular_macroman/CoreSansA45-webfont.eot');
   src: font-url('coresansa_45regular_macroman/CoreSansA45-webfont.eot?#iefix') format('embedded-opentype'),
        font-url('coresansa_45regular_macroman/CoreSansA45-webfont.woff2') format('woff2'),
        font-url('coresansa_45regular_macroman/CoreSansA45-webfont.woff') format('woff'),
        font-url('coresansa_45regular_macroman/CoreSansA45-webfont.ttf') format('truetype'),
        font-url('coresansa_45regular_macroman/CoreSansA45-webfont.svg#core_sans_a_45_regularregular') format('svg');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'core_sans_a_45_regularitalic';
+  font-family: 'Core Sans';
   src: font-url('coresansa_45regularitalic_macroman/CoreSansA45It-webfont.eot');
   src: font-url('coresansa_45regularitalic_macroman/CoreSansA45It-webfont.eot?#iefix') format('embedded-opentype'),
        font-url('coresansa_45regularitalic_macroman/CoreSansA45It-webfont.woff2') format('woff2'),
        font-url('coresansa_45regularitalic_macroman/CoreSansA45It-webfont.woff') format('woff'),
        font-url('coresansa_45regularitalic_macroman/CoreSansA45It-webfont.ttf') format('truetype'),
        font-url('coresansa_45regularitalic_macroman/CoreSansA45It-webfont.svg#core_sans_a_45_regularitalic') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'core_sans_a_55_mediumregular';
+  font-family: 'Core Sans';
   src: font-url('coresansa_55medium_macroman/CoreSansA55-webfont.eot');
   src: font-url('coresansa_55medium_macroman/CoreSansA55-webfont.eot?#iefix') format('embedded-opentype'),
        font-url('coresansa_55medium_macroman/CoreSansA55-webfont.woff2') format('woff2'),
        font-url('coresansa_55medium_macroman/CoreSansA55-webfont.woff') format('woff'),
        font-url('coresansa_55medium_macroman/CoreSansA55-webfont.ttf') format('truetype'),
        font-url('coresansa_55medium_macroman/CoreSansA55-webfont.svg#core_sans_a_55_mediumregular') format('svg');
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'core_sans_a_55_mediumitalic';
+  font-family: 'Core Sans';
   src: font-url('coresansa_55mediumitalic_macroman/CoreSansA55It-webfont.eot');
   src: font-url('coresansa_55mediumitalic_macroman/CoreSansA55It-webfont.eot?#iefix') format('embedded-opentype'),
        font-url('coresansa_55mediumitalic_macroman/CoreSansA55It-webfont.woff2') format('woff2'),
        font-url('coresansa_55mediumitalic_macroman/CoreSansA55It-webfont.woff') format('woff'),
        font-url('coresansa_55mediumitalic_macroman/CoreSansA55It-webfont.ttf') format('truetype'),
        font-url('coresansa_55mediumitalic_macroman/CoreSansA55It-webfont.svg#core_sans_a_55_mediumitalic') format('svg');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 500;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'core_sans_a_65_boldregular';
+  font-family: 'Core Sans';
   src: font-url('coresansa_65bold_macroman/CoreSansA65-webfont.eot');
   src: font-url('coresansa_65bold_macroman/CoreSansA65-webfont.eot?#iefix') format('embedded-opentype'),
        font-url('coresansa_65bold_macroman/CoreSansA65-webfont.woff2') format('woff2'),
        font-url('coresansa_65bold_macroman/CoreSansA65-webfont.woff') format('woff'),
        font-url('coresansa_65bold_macroman/CoreSansA65-webfont.ttf') format('truetype'),
        font-url('coresansa_65bold_macroman/CoreSansA65-webfont.svg#core_sans_a_65_boldregular') format('svg');
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'core_sans_a_75_extraboldRg';
+  font-family: 'Core Sans';
   src: font-url('coresansa_75extrabold_macroman/CoreSansA75-webfont.eot');
   src: font-url('coresansa_75extrabold_macroman/CoreSansA75-webfont.eot?#iefix') format('embedded-opentype'),
        font-url('coresansa_75extrabold_macroman/CoreSansA75-webfont.woff2') format('woff2'),
        font-url('coresansa_75extrabold_macroman/CoreSansA75-webfont.woff') format('woff'),
        font-url('coresansa_75extrabold_macroman/CoreSansA75-webfont.ttf') format('truetype'),
        font-url('coresansa_75extrabold_macroman/CoreSansA75-webfont.svg#core_sans_a_75_extraboldRg') format('svg');
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
 
 // SERIF
 
 @font-face {
-  font-family: 'Merriweather-Regular';
+  font-family: 'Merriweather';
   src: font-url('merriweather/Merriweather-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Merriweather-Italic';
+  font-family: 'Merriweather';
   src: font-url('merriweather/Merriweather-Italic.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'Merriweather-Bold';
+  font-family: 'Merriweather';
   src: font-url('merriweather/Merriweather-Bold.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Merriweather-BoldItalic';
+  font-family: 'Merriweather';
   src: font-url('merriweather/Merriweather-BoldItalic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: bold;
+  font-style: italic;
 }

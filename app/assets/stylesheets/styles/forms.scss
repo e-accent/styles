@@ -62,7 +62,7 @@ button, input[type="file"] {
   border: 1px solid $hairline-grey;
   border-radius: .25rem;
   background: linear-gradient($light-grey, $white);
-  font-weight: $fw-book;
+  font-weight: 400;
   margin-top: .25 * $baseline;
   margin-bottom: .25 * $baseline;
   padding: .3333rem .75rem;
@@ -82,7 +82,7 @@ button, input[type="file"] {
   select {
     background: none;
     border: none;
-    font-weight: $fw-book;
+    font-weight: 400;
     margin: 0;
     margin-right: .5em;
     padding: 0;
