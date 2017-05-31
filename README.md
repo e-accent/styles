@@ -10,7 +10,7 @@
 
 ###a. Development environment
 
-Fetch the latest code form github, create your work branch:
+Fetch the latest code from github, create your work branch:
 ```
 $ git clone https://github.com/e-accent/styles.git <the location of local>
 $ git fetch origin
@@ -33,11 +33,15 @@ gem 'styles', git: 'https://github.com/e-accent/styles.git'
 
 Run `bundle`
 
-## How use it
+## How to use it
 
-Import be used style file, then using in a section:
+Import the files to be used in your stylesheets, then used as follows:
 ```scss
 @import "styles/flexbox";
+
+// Or
+
+@import "styles/all"; // If you want all the styles in this project
 
 section {
   @include flexbox;

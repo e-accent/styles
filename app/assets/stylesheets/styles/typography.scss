@@ -2,18 +2,24 @@
 $available_languages: ('en');
 
 // Fonts, size and line-height
-$serif: serif;
-$sans:  sans-serif;
+$serif: 'Merriweather', serif;
+$sans:  "core_sans_a_45_regularregular", "Helvetica Neue", Helvetica, sans-serif;
 $baseline: 1.5rem;
 
-// Font weights
-$fw-x-light: 200;
-$fw-light:   300;
-$fw-book:    400;
-$fw-medium:  500;
-$fw-normal:  $fw-medium;
-$fw-bold:    700;
-$fw-black:   900;
+// Font styles: sans-serif
+$sans-x-light: "core_sans_a_25_extralightRg",   "Helvetica Neue", Helvetica, sans-serif;
+$sans-light:   "core_sans_a_35_lightregular",   "Helvetica Neue", Helvetica, sans-serif;
+$sans-book:    "core_sans_a_45_regularregular", "Helvetica Neue", Helvetica, sans-serif;
+$sans-medium:  "core_sans_a_55_mediumregular",  "Helvetica Neue", Helvetica, sans-serif;
+$sans-normal:  "core_sans_a_55_mediumregular",  "Helvetica Neue", Helvetica, sans-serif;
+$sans-bold:    "core_sans_a_65_boldregular",    "Helvetica Neue", Helvetica, sans-serif;
+$sans-black:   "core_sans_a_75_extraboldRg",    "Helvetica Neue", Helvetica, sans-serif;
+
+// Font styles: serif
+$serif-normal: "Merriweather-Regular", serif;
+$serif-italic: "Merriweather-Italic", serif;
+$serif-bold:   "Merriweather-Bold", serif;
+$serif-italic: "Merriweather-BoldItalic", serif; 
 
 // Modular scale
 $fs-x-small:    .7071067812em;
