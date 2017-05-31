@@ -1,10 +1,11 @@
 // Languages
 $available_languages: ('en');
 
-// Fonts, size and line-height
-$serif: 'Merriweather', serif;
-$sans:  "core_sans_a_45_regularregular", "Helvetica Neue", Helvetica, sans-serif;
-$baseline: 1.5rem;
+// General typography rules
+$serif:        "Merriweather", serif;
+$sans:         "core_sans_a_45_regularregular", "Helvetica Neue", Helvetica, sans-serif;
+$sans-serif:   "core_sans_a_45_regularregular", "Helvetica Neue", Helvetica, sans-serif;
+$baseline:     1.5rem;
 
 // Font styles: sans-serif
 $sans-x-light: "core_sans_a_25_extralightRg",   "Helvetica Neue", Helvetica, sans-serif;
@@ -33,6 +34,11 @@ $fs-xxx-large: 2.0000000000em;
 body {
   line-height: $baseline;
   text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-family: $serif-bold;
 }
 
 // TYPOGRAPHY
